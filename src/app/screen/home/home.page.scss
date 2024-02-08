@@ -1,0 +1,87 @@
+.header {
+  padding: 2%;
+  vertical-align: baseline;
+
+  ion-icon {
+    font-size: x-large;
+    padding-left: 10%;
+  }
+
+  .icons {
+    text-align: right;
+  }
+
+  .profile {
+    img {
+      padding-left: 10%;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.videocard {
+  margin: 0px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  ion-avatar {
+    width: 36px;
+    height: 36px;
+  }
+
+  .head {
+    font-weight: 700;
+    color: black;
+    margin: 0px;
+  }
+
+  .subhead {
+    font-size: smaller;
+  }
+
+  ion-icon {
+    font-size: larger;
+    margin-top: 10%;
+    color: black;
+  }
+}
+
+.hroscroll {
+  overflow: auto;
+  white-space: nowrap;
+
+  .svideo {
+    display: inline-block;
+    width: 150px;
+    height: 250px;
+    margin-right: 15px;
+
+    img {
+      width: 150px;
+      height: 250px;
+    }
+
+    .bottom {
+      width: 150px;
+      position: absolute;
+      bottom: 10%;
+      color: white;
+
+      p {
+        width: 150px;
+      }
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.shorts {
+  margin-top: 10%;
+  padding-left: 2%;
+}

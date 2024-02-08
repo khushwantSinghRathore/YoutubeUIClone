@@ -1,0 +1,66 @@
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row class="header">
+      <ion-col>
+        <img src="assets/Logo.png" />
+      </ion-col>
+      <ion-col offset="3" class="icons">
+        <ion-icon name="easel-outline"></ion-icon>
+        <ion-icon name="notifications-outline"></ion-icon>
+        <ion-icon name="search"></ion-icon>
+      </ion-col>
+      <ion-col class="profile" size="1.5">
+        <img src="assets/Ellipse1.png" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-chip style="border-radius: 2px"
+          ><ion-icon name="compass-outline"></ion-icon>
+          <ion-label>Explore </ion-label></ion-chip
+        >
+        |
+        <ion-chip *ngFor="let item of options">
+          <ion-label>{{item.name}}</ion-label>
+        </ion-chip>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card class="videocard">
+          <img src="assets/Rectangle5.png" />
+          <ion-row>
+            <ion-col size="1">
+              <ion-avatar> <img src="assets/Ellipse2.png" /></ion-avatar>
+            </ion-col>
+            <ion-col offset="0.5">
+              <p class="head">
+                The Beauty of Existence - Heart Touching Nasheed
+              </p>
+              <p class="subhead">19,210,251 viewsJul • 1, 2016</p>
+            </ion-col>
+            <ion-col size="1"
+              ><ion-icon name="ellipsis-vertical"></ion-icon
+            ></ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row class="shorts">
+      <ion-col size="12"> <img src="assets/shorts.png" /></ion-col>
+      <ion-col size="12">
+        <div class="hroscroll">
+          <div class="svideo" *ngFor="let item of shorts">
+            <img src="{{item.img}}" />
+
+            <p class="bottom">
+              {{item.des}}
+              <span>{{item.view}}</span>
+            </p>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
