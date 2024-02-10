@@ -82,6 +82,17 @@
       transform: translateY(-5px);
     }
 
+    .timer {
+      padding: 2px;
+      width: fit-content;
+      background: black;
+      color: white;
+      border-radius: 2px;
+      right: 10px;
+      top: 70px;
+      position: absolute;
+    }
+
     p {
       margin: 2px;
       font-size: medium;
