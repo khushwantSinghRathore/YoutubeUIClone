@@ -1,13 +1,111 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>library</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">library</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid>
+    <ion-row class="header">
+      <ion-col>
+        <img src="assets/Logo.png" />
+      </ion-col>
+      <ion-col offset="3" class="icons">
+        <ion-icon name="easel-outline"></ion-icon>
+        <ion-icon name="notifications-outline"></ion-icon>
+        <ion-icon name="search"></ion-icon>
+      </ion-col>
+      <ion-col class="profile" size="1.5">
+        <img src="assets/Ellipse1.png" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="recent">
+      <ion-col>
+        <p>Recent</p>
+      </ion-col>
+      <ion-col size="12" class="hscroll">
+        <ion-card class="card" *ngFor="let item of vids">
+          <img src="{{item.img}}" />
+          <div class="redline"></div>
+          <ion-row>
+            <ion-col size="10">
+              <p>{{item.des}}</p>
+              <p>{{item.subd}}</p>
+            </ion-col>
+            <ion-col size="2"
+              ><ion-icon name="ellipsis-vertical"></ion-icon
+            ></ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+
+      <ion-col>
+        <hr height="0.2px" color="grey" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-list lines="none">
+          <ion-item>
+            <ion-icon name="timer-outline" slot="start"></ion-icon>
+            Histroy
+          </ion-item>
+          <ion-item
+            ><ion-icon name="videocam-outline" slot="start"></ion-icon> Your
+            Videos
+          </ion-item>
+          <ion-item>
+            <ion-icon name="download-outline" slot="start"></ion-icon>
+            <ion-label>
+              Downloads
+              <p>67 videos</p>
+            </ion-label>
+            <ion-icon name="checkmark-circle" slot="end"></ion-icon>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="phone-landscape-outline" slot="start"></ion-icon>
+            Your movies
+          </ion-item>
+          <ion-item>
+            <ion-icon name="time-outline" slot="start"></ion-icon>
+            <ion-label>
+              Watch later
+              <p>4 unwatched videos</p>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <hr height="0.2px" color="grey" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="playlist">
+      <ion-col class="l1">
+        <p>Playlists</p>
+      </ion-col>
+      <ion-col class="r1">
+        <p>Recently added <ion-icon name="chevron-down"></ion-icon></p>
+      </ion-col>
+      <ion-col size="12">
+        <ion-list lines="none">
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <ion-icon name="add"></ion-icon>
+            </ion-thumbnail>
+
+            <ion-label class="blue">New Playlist</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img src="assets/Frame32.png" />
+            </ion-thumbnail>
+            <ion-label
+              >Liked Videos
+              <p>50 videos</p>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
