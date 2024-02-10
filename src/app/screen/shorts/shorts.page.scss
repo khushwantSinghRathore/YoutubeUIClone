@@ -4,16 +4,15 @@
   color: white;
   height: 5vh;
 
-  .h1{
-    
-    ion-icon{
-      margin: 5px; 
+  .h1 {
+    ion-icon {
+      margin: 5px;
     }
   }
 }
 
-ion-content{
-  --background: black !important:
+ion-content {
+  --background: black !important;
 }
 .shorts {
   img {
@@ -36,19 +35,17 @@ ion-grid {
   bottom: 5%;
   color: white;
 
-  ion-avatar{
+  ion-avatar {
     margin: 10px 0px;
     width: 32px;
     height: 32px;
   }
 
-  .sub{
-
-    span{
+  .sub {
+    span {
       vertical-align: -webkit-baseline-middle;
       margin-right: 10px;
     }
-    
   }
 
   .btm80 {
@@ -56,26 +53,23 @@ ion-grid {
     bottom: 5%;
     width: 80%;
     padding-left: 5%;
-
-  
   }
 
-
-  .btns{
+  .btns {
     position: absolute;
     bottom: 5%;
     right: 0%;
     text-align: center;
-    ion-icon{
+    ion-icon {
       font-size: x-large;
     }
-    p{
+    p {
       margin: 2px 0px;
     }
-    ion-col{
+    ion-col {
       margin: 10px 0px;
     }
-    ion-thumbnail{
+    ion-thumbnail {
       margin: 0px auto;
     }
   }

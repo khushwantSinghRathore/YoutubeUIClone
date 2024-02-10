@@ -1,13 +1,61 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>subscription</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">subscription</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid>
+    <ion-row class="header">
+      <ion-col>
+        <img src="assets/Logo.png" />
+      </ion-col>
+      <ion-col offset="3" class="icons">
+        <ion-icon name="easel-outline"></ion-icon>
+        <ion-icon name="notifications-outline"></ion-icon>
+        <ion-icon name="search"></ion-icon>
+      </ion-col>
+      <ion-col class="profile" size="1.5">
+        <img src="assets/Ellipse1.png" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="profile">
+      <ion-col size="2.5" *ngFor="let item of [1,2,3,4]">
+        <ion-avatar>
+          <img src="assets/Ellipse1.png" />
+          <p></p>
+        </ion-avatar>
+        <p>Like Nastya</p>
+      </ion-col>
+      <ion-col class="all">
+        <p>All</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="hscroll">
+        <ion-chip *ngFor="let item of options">
+          <ion-label>{{item.name}}</ion-label>
+        </ion-chip>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-card class="videocard" *ngFor="let item of shorts">
+          <div>
+            <img src="{{item.img}}" />
+            <img class="shorts" src="assets/Frame51.png" />
+          </div>
+          <ion-row class="detl">
+            <ion-col size="1">
+              <ion-avatar> <img src="assets/Ellipse2.png" /></ion-avatar>
+            </ion-col>
+            <ion-col offset="0.5">
+              <p class="head">{{item.des}}</p>
+              <p class="subhead">{{item.subd}}</p>
+            </ion-col>
+            <ion-col size="1"
+              ><ion-icon name="ellipsis-vertical"></ion-icon
+            ></ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
