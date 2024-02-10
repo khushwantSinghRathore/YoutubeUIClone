@@ -35,6 +35,14 @@ const routes: Routes = [
         (m) => m.LibraryPageModule
       ),
   },
+  {
+    path: 'history',
+    loadChildren: () => import('./screen/history/history.module').then( m => m.HistoryPageModule)
+  },
+  {
+    path: 'download',
+    loadChildren: () => import('./screen/download/download.module').then( m => m.DownloadPageModule)
+  },
 ];
 
 @NgModule({
