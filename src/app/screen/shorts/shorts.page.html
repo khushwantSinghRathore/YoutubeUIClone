@@ -1,13 +1,66 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>shorts</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">shorts</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid>
+    <ion-row class="header">
+      <ion-col class="h1"> <ion-icon name="arrow-back"></ion-icon> </ion-col>
+      <ion-col size="9"></ion-col>
+      <ion-col class="h1"><ion-icon name="camera-outline"></ion-icon></ion-col>
+    </ion-row>
+    <ion-row class="shorts">
+      <ion-col>
+        <img src="assets/Rectangle1.png" />
+      </ion-col>
+    </ion-row>
+    <ion-row class="footer">
+      <ion-col size="10" class="btm80">
+        <ion-row>
+          <ion-col>
+            <p>
+              DIY Toys | Satisfying And Relaxing | SADEK Tuts Tiktok Compition |
+              Fidget Trading <span>#SADEK #Shorts</span> tiktok
+            </p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="1.5">
+            <ion-avatar> <img src="assets/Ellipse1.png" /> </ion-avatar
+          ></ion-col>
+          <ion-col>
+            <div class="sub">
+              <span>SADEK Tuts</span>
+              <ion-button color="danger">SUBSCRIBE</ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+
+      <ion-col size="2" class="btns">
+        <ion-row>
+          <ion-col size="12">
+            <ion-icon name="ellipsis-horizontal"></ion-icon
+          ></ion-col>
+          <ion-col size="12">
+            <ion-icon name="thumbs-up"></ion-icon>
+            <p>245K</p></ion-col
+          >
+          <ion-col size="12">
+            <ion-icon name="thumbs-down"></ion-icon>
+            <p>Dislike</p></ion-col
+          >
+          <ion-col size="12">
+            <ion-icon name="chatbox"></ion-icon>
+            <p>618</p>
+          </ion-col>
+          <ion-col size="12">
+            <ion-icon name="arrow-redo"></ion-icon>
+            <p>Share</p></ion-col
+          >
+          <ion-col size="12">
+            <ion-thumbnail>
+              <img src="assets/Frame32.png" />
+            </ion-thumbnail>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

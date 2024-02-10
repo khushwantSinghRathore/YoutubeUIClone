@@ -49,15 +49,12 @@
     </ion-row>
     <ion-row class="shorts">
       <ion-col size="12"> <img src="assets/shorts.png" /></ion-col>
-      <ion-col size="12">
-        <div class="hroscroll">
-          <div class="svideo" *ngFor="let item of shorts">
-            <img src="{{item.img}}" />
-
-            <p class="bottom">
-              {{item.des}}
-              <span>{{item.view}}</span>
-            </p>
+      <ion-col size="12" class="hroscroll">
+        <div class="svideo" *ngFor="let item of shorts">
+          <img src="{{item.img}}" />
+          <div class="bottom">
+            <p>{{item.des}}</p>
+            <p>{{item.view}}</p>
           </div>
         </div>
       </ion-col>

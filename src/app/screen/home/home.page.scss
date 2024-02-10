@@ -67,11 +67,13 @@
     .bottom {
       width: 150px;
       position: absolute;
-      bottom: 10%;
+      bottom: 5%;
       color: white;
+      white-space: break-spaces;
+      padding: 2%;
 
       p {
-        width: 150px;
+        width: 140px;
       }
     }
   }
