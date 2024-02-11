@@ -1,0 +1,126 @@
+ion-grid {
+  padding: 0px;
+}
+
+ion-col {
+  padding: 0px;
+}
+
+.vidimg {
+  img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .redline {
+    height: 5px;
+    background: red;
+    width: 70%;
+    transform: translateY(-9px);
+  }
+}
+
+.des {
+  padding-left: 5%;
+  margin-bottom: 5%;
+}
+
+.icondown {
+  margin-top: 5%;
+  font-size: x-large;
+}
+
+.iconsrow {
+  text-align: center;
+  ion-icon {
+    font-size: x-large;
+  }
+
+  p {
+    margin: 0px;
+    margin-top: 5px;
+  }
+}
+
+.subs {
+  ion-avatar {
+    width: 36px;
+    height: 36px;
+  }
+
+  p {
+    margin: 0px;
+  }
+
+  .text {
+    text-align: center;
+
+    p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      color: #ff0000;
+    }
+  }
+}
+
+hr {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.pic {
+  ion-avatar {
+    width: 25px;
+    height: 25px;
+  }
+
+  p {
+    margin: 0px;
+    font-size: small;
+  }
+}
+
+.videocard {
+  margin: 0px;
+  margin-top: 2%;
+
+  .detl {
+    margin-top: 10px;
+  }
+
+  .shorts {
+    position: absolute;
+    width: 51px;
+    right: 3%;
+    height: 14px;
+    bottom: 35%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  ion-avatar {
+    width: 36px;
+    height: 36px;
+  }
+
+  .head {
+    font-weight: 700;
+    color: black;
+    margin: 0px;
+  }
+
+  .subhead {
+    font-size: smaller;
+  }
+
+  ion-icon {
+    font-size: larger;
+    margin-top: 10%;
+    color: black;
+  }
+}

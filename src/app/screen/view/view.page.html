@@ -1,0 +1,104 @@
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col class="vidimg">
+        <img src="assets/Rectangle9.png" />
+        <div class="redline"></div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="des">
+        <p>
+          সীরাহ | রাসূলের ﷺ দেহের বর্ননা, নবুওয়াত ও রিসালাত লাভ, জিব্রাইলের আঃ
+          সাথে সাক্ষাত | পর্ব - ০৪
+        </p>
+
+        <p>3,627 views • Premiered Jul 1, 2021</p>
+      </ion-col>
+      <ion-col size="1" class="icondown"
+        ><ion-icon name="chevron-down"></ion-icon
+      ></ion-col>
+    </ion-row>
+
+    <ion-row class="iconsrow">
+      <ion-col
+        ><ion-icon name="thumbs-up-outline"></ion-icon>
+        <p>25.6k</p></ion-col
+      >
+      <ion-col
+        ><ion-icon name="thumbs-down-outline"></ion-icon>
+        <p>65</p></ion-col
+      >
+      <ion-col>
+        <ion-icon name="arrow-redo-outline"></ion-icon>
+        <p>Share</p>
+      </ion-col>
+      <ion-col>
+        <ion-icon name="arrow-down"></ion-icon>
+        <p>Download</p>
+      </ion-col>
+      <ion-col>
+        <ion-icon name="layers-outline"></ion-icon>
+        <p>Save</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="subs">
+      <ion-col size="12">
+        <hr height="1px" color="grey" />
+      </ion-col>
+      <ion-col offset="0.5" size="1.5">
+        <ion-avatar> <img src="assets/Ellipse3.png" /> </ion-avatar
+      ></ion-col>
+      <ion-col>
+        <p>Voice of Books</p>
+        <p>289K subscibe</p>
+      </ion-col>
+      <ion-col class="text">
+        <p>SUBSCRIBE</p>
+      </ion-col>
+      <ion-col size="12">
+        <hr height="1px" color="grey" />
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col offset="0.5" size="10.5">
+        <p>Comments 149</p>
+      </ion-col>
+      <ion-col size="1">
+        <p><ion-icon name="chevron-expand"></ion-icon></p>
+      </ion-col>
+
+      <ion-col size="1.5" offset="0.5" class="pic">
+        <ion-avatar> <img src="assets/Ellipse3.png" /> </ion-avatar>
+      </ion-col>
+      <ion-col class="pic" size="9">
+        <p>
+          জাযাকাল্লাহ ভাইয়া আপনার এই মেহনত আল্লাহ কবুল করুক সম্ভব হলে প্রতিদিন
+          ১টা করে porbo দিয়েন
+        </p></ion-col
+      >
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card class="videocard" *ngFor="let item of shorts">
+          <div>
+            <img src="{{item.img}}" />
+            <img class="shorts" src="assets/Frame51.png" />
+          </div>
+          <ion-row class="detl">
+            <ion-col size="1">
+              <ion-avatar> <img src="assets/Ellipse2.png" /></ion-avatar>
+            </ion-col>
+            <ion-col offset="0.5">
+              <p class="head">{{item.des}}</p>
+              <p class="subhead">{{item.subd}}</p>
+            </ion-col>
+            <ion-col size="1"
+              ><ion-icon name="ellipsis-vertical"></ion-icon
+            ></ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

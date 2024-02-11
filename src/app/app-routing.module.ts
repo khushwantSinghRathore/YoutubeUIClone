@@ -43,6 +43,10 @@ const routes: Routes = [
     path: 'download',
     loadChildren: () => import('./screen/download/download.module').then( m => m.DownloadPageModule)
   },
+  {
+    path: 'view',
+    loadChildren: () => import('./screen/view/view.module').then( m => m.ViewPageModule)
+  },
 ];
 
 @NgModule({
