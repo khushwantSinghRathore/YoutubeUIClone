@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-history',
@@ -61,7 +62,19 @@ export class HistoryPage implements OnInit {
       subd: '19,210,251 viewsJul • 1, 2016',
     },
   ];
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {}
+
+  back() {
+    this.router.navigateByUrl('/tabs/library');
+  }
+
+  toShorts() {
+    this.router.navigateByUrl('/tabs/shorts');
+  }
+
+  toView() {
+    this.router.navigateByUrl('/view');
+  }
 }

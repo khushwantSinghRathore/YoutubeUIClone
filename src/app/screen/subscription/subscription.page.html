@@ -37,7 +37,11 @@
 
     <ion-row>
       <ion-col>
-        <ion-card class="videocard" *ngFor="let item of shorts">
+        <ion-card
+          class="videocard"
+          *ngFor="let item of shorts"
+          (click)="toView()"
+        >
           <div>
             <img src="{{item.img}}" />
             <img class="shorts" src="assets/Frame51.png" />

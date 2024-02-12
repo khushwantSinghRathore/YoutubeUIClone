@@ -1,4 +1,6 @@
+import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-view',
@@ -28,7 +30,11 @@ export class ViewPage implements OnInit {
       subd: '19,210,251 viewsJul • 1, 2016',
     },
   ];
-  constructor() {}
+  constructor(private location: Location) {}
 
   ngOnInit() {}
+
+  back() {
+    this.location.back();
+  }
 }

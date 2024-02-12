@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-library',
@@ -28,7 +29,19 @@ export class LibraryPage implements OnInit {
       subd: 'An Naffe',
     },
   ];
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {}
+
+  toHistory() {
+    this.router.navigateByUrl('/history');
+  }
+
+  toDownload() {
+    this.router.navigateByUrl('/download');
+  }
+
+  toView() {
+    this.router.navigateByUrl('/view');
+  }
 }

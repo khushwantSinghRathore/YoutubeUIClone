@@ -7,11 +7,6 @@ const routes: Routes = [
   //   loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   // },
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full',
-  },
-  {
     path: 'home',
     loadChildren: () =>
       import('./screen/home/home.module').then((m) => m.HomePageModule),
@@ -37,15 +32,32 @@ const routes: Routes = [
   },
   {
     path: 'history',
-    loadChildren: () => import('./screen/history/history.module').then( m => m.HistoryPageModule)
+    loadChildren: () =>
+      import('./screen/history/history.module').then(
+        (m) => m.HistoryPageModule
+      ),
   },
   {
     path: 'download',
-    loadChildren: () => import('./screen/download/download.module').then( m => m.DownloadPageModule)
+    loadChildren: () =>
+      import('./screen/download/download.module').then(
+        (m) => m.DownloadPageModule
+      ),
   },
   {
     path: 'view',
-    loadChildren: () => import('./screen/view/view.module').then( m => m.ViewPageModule)
+    loadChildren: () =>
+      import('./screen/view/view.module').then((m) => m.ViewPageModule),
+  },
+  {
+    path: 'tabs',
+    loadChildren: () =>
+      import('./tabs/tabs.module').then((m) => m.TabsPageModule),
+  },
+  {
+    path: '',
+    redirectTo: 'tabs',
+    pathMatch: 'full',
   },
 ];
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-subscription',
@@ -36,7 +37,11 @@ export class SubscriptionPage implements OnInit {
       subd: '19,210,251 viewsJul • 1, 2016',
     },
   ];
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {}
+
+  toView() {
+    this.router.navigateByUrl('/view');
+  }
 }

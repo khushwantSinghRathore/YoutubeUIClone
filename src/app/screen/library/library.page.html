@@ -19,7 +19,7 @@
         <p>Recent</p>
       </ion-col>
       <ion-col size="12" class="hscroll">
-        <ion-card class="card" *ngFor="let item of vids">
+        <ion-card class="card" *ngFor="let item of vids" (click)="toView()">
           <img src="{{item.img}}" />
           <div class="redline"></div>
           <div class="timer">0: 50</div>
@@ -43,7 +43,7 @@
     <ion-row>
       <ion-col size="12">
         <ion-list lines="none">
-          <ion-item>
+          <ion-item (click)="toHistory()">
             <ion-icon name="timer-outline" slot="start"></ion-icon>
             Histroy
           </ion-item>
@@ -51,7 +51,7 @@
             ><ion-icon name="videocam-outline" slot="start"></ion-icon> Your
             Videos
           </ion-item>
-          <ion-item>
+          <ion-item (click)="toDownload()">
             <ion-icon name="download-outline" slot="start"></ion-icon>
             <ion-label>
               Downloads

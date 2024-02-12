@@ -28,7 +28,7 @@
     </ion-row>
     <ion-row>
       <ion-col>
-        <ion-card class="videocard">
+        <ion-card class="videocard" (click)="toView()">
           <img src="assets/Rectangle5.png" />
           <ion-row>
             <ion-col size="1">
@@ -50,7 +50,7 @@
     <ion-row class="shorts">
       <ion-col size="12"> <img src="assets/shorts.png" /></ion-col>
       <ion-col size="12" class="hroscroll">
-        <div class="svideo" *ngFor="let item of shorts">
+        <div class="svideo" *ngFor="let item of shorts" (click)="openShort()">
           <img src="{{item.img}}" />
           <div class="bottom">
             <p>{{item.des}}</p>

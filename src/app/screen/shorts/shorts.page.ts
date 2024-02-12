@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shorts.page.scss'],
 })
 export class ShortsPage implements OnInit {
+  constructor(private location: Location) {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  back() {
+    this.location.back();
   }
-
 }

@@ -2,7 +2,9 @@
   <ion-grid>
     <ion-row class="header">
       <ion-col size="5">
-        <p class="back"><ion-icon name="arrow-back"></ion-icon>Downloads</p>
+        <p class="back" (click)="back()">
+          <ion-icon name="arrow-back"></ion-icon>Downloads
+        </p>
       </ion-col>
       <ion-col offset="" class="icons">
         <ion-icon name="easel-outline"></ion-icon>
@@ -13,7 +15,7 @@
         <img src="assets/Ellipse1.png" />
       </ion-col>
     </ion-row>
-    <ion-row *ngFor="let item of vids" class="videos">
+    <ion-row *ngFor="let item of vids" class="videos" (click)="toView()">
       <ion-col size="5" offset="0.2">
         <img src="{{item.img}}" />
         <div class="red"></div>

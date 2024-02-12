@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -29,9 +30,22 @@ export class HomePage implements OnInit {
       img: 'assets/Rectangle3.png',
       view: '24M views',
     },
+    {
+      des: 'DIY Toys | Satisfying And Relaxing | DIY Tiktok Compilation..',
+      img: 'assets/Rectangle4.png',
+      view: '24M views',
+    },
   ];
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {}
+
+  openShort() {
+    this.router.navigateByUrl('/tabs/shorts');
+  }
+
+  toView() {
+    this.router.navigateByUrl('/view');
+  }
 }
